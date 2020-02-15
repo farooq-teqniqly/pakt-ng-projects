@@ -9,7 +9,7 @@ export class DropdownMenuDirective {
   @HostBinding('class.dropdown-menu') dropdownMenu = true;
 
   @HostListener('click') onClick() {
-    this.dropdown.isActive = false;
+    this.dropdown.toggle();
   }
   
   constructor(@Host() private dropdown: DropdownDirective) { }
