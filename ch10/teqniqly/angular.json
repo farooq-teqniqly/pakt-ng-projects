@@ -22,7 +22,10 @@
             "tsConfig": "apps/demo/tsconfig.app.json",
             "aot": true,
             "assets": ["apps/demo/src/favicon.ico", "apps/demo/src/assets"],
-            "styles": ["apps/demo/src/styles.scss", "./node_modules/bulma/css/bulma.min.css"],
+            "styles": [
+              "apps/demo/src/styles.scss",
+              "./node_modules/bulma/css/bulma.min.css"
+            ],
             "scripts": []
           },
           "configurations": {

@@ -10,7 +10,5 @@ export class DropdownToggleDirective {
   @HostListener('click') onClick() {
     this.dropdown.toggle();
   }
-  constructor(@Host() private dropdown: DropdownDirective) { 
-    
-  }
+  constructor(@Host() private dropdown: DropdownDirective) {}
 }

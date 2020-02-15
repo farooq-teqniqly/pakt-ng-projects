@@ -7,7 +7,17 @@ import { DropdownItemDirective } from './dropdown/dropdown-item.directive';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [DropdownDirective, DropdownToggleDirective, DropdownMenuDirective, DropdownItemDirective],
-  exports: [DropdownDirective, DropdownToggleDirective, DropdownMenuDirective, DropdownItemDirective]
+  declarations: [
+    DropdownDirective,
+    DropdownToggleDirective,
+    DropdownMenuDirective,
+    DropdownItemDirective
+  ],
+  exports: [
+    DropdownDirective,
+    DropdownToggleDirective,
+    DropdownMenuDirective,
+    DropdownItemDirective
+  ]
 })
 export class DemoUiModule {}

@@ -12,8 +12,8 @@ export class DropdownDirective {
   menu: DropdownMenuDirective;
 
   @HostBinding('class.dropdown') dropdown = true;
-  
-  @HostBinding('class.is-active') 
+
+  @HostBinding('class.is-active')
   private get isActive(): boolean {
     return this.isOpen;
   }
