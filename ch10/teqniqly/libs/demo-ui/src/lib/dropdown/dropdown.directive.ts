@@ -14,13 +14,16 @@ export class DropdownDirective {
   @HostBinding('class.dropdown') dropdown = true;
   
   @HostBinding('class.is-active') 
-  get isActive(): boolean {
+  private get isActive(): boolean {
     return this.isOpen;
   }
-  set isActive(value: boolean) {
+  private set isActive(value: boolean) {
     this.isOpen = value;
   }
 
+  public toggle(): void {
+    this.isActive = !this.isActive;
+  }
 
   constructor() {}
 }

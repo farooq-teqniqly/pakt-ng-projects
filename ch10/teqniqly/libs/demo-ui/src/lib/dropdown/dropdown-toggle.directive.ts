@@ -8,7 +8,7 @@ export class DropdownToggleDirective {
   @HostBinding('attr.aria-haspopup') ariaHasPopup = 'true';
 
   @HostListener('click') onClick() {
-    this.dropdown.isActive = !this.dropdown.isActive;
+    this.dropdown.toggle();
   }
   constructor(@Host() private dropdown: DropdownDirective) { 
     
