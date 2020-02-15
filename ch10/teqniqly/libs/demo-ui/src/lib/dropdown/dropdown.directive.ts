@@ -4,8 +4,8 @@ import { Directive, HostBinding } from '@angular/core';
   selector: '[tqDropdown]'
 })
 export class DropdownDirective {
-  @HostBinding('class.dropdown') dropdown;
-  @HostBinding('class.is-active') isActive;
+  @HostBinding('class.dropdown') dropdown = true;
+  @HostBinding('class.is-active') isActive = true;
   constructor() { }
 
 }

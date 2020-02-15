@@ -4,7 +4,7 @@ import { Directive, HostBinding } from '@angular/core';
   selector: '[tqDropdownItem]'
 })
 export class DropdownItemDirective {
-  @HostBinding('class.dropdown-item') dropdownItem;
+  @HostBinding('class.dropdown-item') dropdownItem = true;
   constructor() { }
 
 }

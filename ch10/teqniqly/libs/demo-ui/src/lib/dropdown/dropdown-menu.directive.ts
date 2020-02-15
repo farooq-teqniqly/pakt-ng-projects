@@ -4,8 +4,8 @@ import { Directive, HostBinding } from '@angular/core';
   selector: '[tqDropdownMenu]'
 })
 export class DropdownMenuDirective {
-  @HostBinding('class.dropdown-menu') dropdownItem;
-  @HostBinding('role') role = 'menu';
+  @HostBinding('attr.role') role = 'menu';
+  @HostBinding('class.dropdown-menu') dropdownMenu = true;
   constructor() { }
 
 }
